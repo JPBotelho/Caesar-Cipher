@@ -37,11 +37,11 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.console = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// textBox1
 			// 
+			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox1.Location = new System.Drawing.Point(18, 52);
 			this.textBox1.Multiline = true;
 			this.textBox1.Name = "textBox1";
@@ -89,7 +89,10 @@
             "20",
             "21",
             "22",
-            "23"});
+            "23",
+            "24",
+            "25",
+            "26"});
 			this.comboBox1.Location = new System.Drawing.Point(18, 227);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(159, 26);
@@ -98,12 +101,14 @@
 			// 
 			// textBox2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(12, 302);
+			this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textBox2.Location = new System.Drawing.Point(18, 302);
 			this.textBox2.Multiline = true;
 			this.textBox2.Name = "textBox2";
 			this.textBox2.ReadOnly = true;
-			this.textBox2.Size = new System.Drawing.Size(770, 121);
+			this.textBox2.Size = new System.Drawing.Size(764, 121);
 			this.textBox2.TabIndex = 4;
+			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
 			// 
 			// label1
 			// 
@@ -166,22 +171,11 @@
 			this.button1.UseVisualStyleBackColor = false;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// console
-			// 
-			this.console.Enabled = false;
-			this.console.Location = new System.Drawing.Point(12, 453);
-			this.console.Name = "console";
-			this.console.ReadOnly = true;
-			this.console.Size = new System.Drawing.Size(770, 20);
-			this.console.TabIndex = 9;
-			this.console.Visible = false;
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 513);
-			this.Controls.Add(this.console);
+			this.ClientSize = new System.Drawing.Size(800, 454);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.comboBox2);
 			this.Controls.Add(this.label4);
@@ -210,7 +204,6 @@
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox console;
 	}
 }
 
